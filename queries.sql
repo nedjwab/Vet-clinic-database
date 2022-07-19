@@ -88,3 +88,8 @@ SELECT AVG(escape_attempts)
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+
+SELECT animals.name
+FROM animals,owners
+WHERE owner_id=owners.id
+AND owners.id=4;
