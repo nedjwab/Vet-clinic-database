@@ -31,7 +31,6 @@ SET species='unspecified';
 SELECT * from animals;
 
 ROLLBACK;
-
 SELECT name,species from animals;
 
 
@@ -41,5 +40,11 @@ WHERE name like '%mon';
 
 UPDATE animals SET species='pokemon' 
 WHERE species IS NULL;
+
+SELECT * from animals;
+
+BEGIN;
+DELETE FROM animals;
+ROLLBACK;
 
 SELECT * from animals;
