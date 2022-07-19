@@ -13,8 +13,14 @@ CREATE TABLE animals (
 ALTER TABLE animals ADD species varchar(255);
 
 CREATE TABLE owners (
-    id integer PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     full_name varchar(100),
     age INT
 );
+
+CREATE TABLE species (
+    id SERIAL PRIMARY KEY,
+    name varchar(100)
+);
+
 
