@@ -9,3 +9,5 @@ CREATE TABLE animals (
     neutered BOOLEAN,
     escape_attempts INT
 );
+
+ALTER TABLE animals ADD species varchar(255);
