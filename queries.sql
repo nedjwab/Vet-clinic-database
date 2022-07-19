@@ -35,4 +35,11 @@ ROLLBACK;
 SELECT name,species from animals;
 
 
+BEGIN;
+UPDATE animals SET species='digimon' 
+WHERE name like '%mon';
 
+UPDATE animals SET species='pokemon' 
+WHERE species IS NULL;
+
+SELECT * from animals;
