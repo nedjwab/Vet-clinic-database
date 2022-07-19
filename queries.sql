@@ -79,3 +79,7 @@ FROM animals;
 SELECT count(escape_attempts),neutered
 FROM animals
 GROUP BY neutered;
+
+SELECT min(weight_kg),max(weight_kg) ,species
+FROM animals
+GROUP BY species;
