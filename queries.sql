@@ -66,3 +66,5 @@ COMMIT;
 
 SELECT * from animals;
 
+SELECT count(*)
+FROM animals;
