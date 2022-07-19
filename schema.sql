@@ -2,7 +2,7 @@
 CREATE DATABASE vet_clinic;
 
 CREATE TABLE animals (
-    id integer PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     name varchar(100),
     date_of_birth DATE,
     weight_kg DECIMAL,
@@ -23,4 +23,4 @@ CREATE TABLE species (
     name varchar(100)
 );
 
-
+ALTER TABLE animals DROP COLUMN species;
