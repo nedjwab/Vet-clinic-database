@@ -83,3 +83,8 @@ GROUP BY neutered;
 SELECT min(weight_kg),max(weight_kg) ,species
 FROM animals
 GROUP BY species;
+
+SELECT AVG(escape_attempts)
+FROM animals
+WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
+GROUP BY species;
