@@ -68,3 +68,7 @@ SELECT * from animals;
 
 SELECT count(*)
 FROM animals;
+
+SELECT count(*)
+FROM animals
+WHERE escape_attempts=0;
