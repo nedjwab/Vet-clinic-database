@@ -125,3 +125,10 @@ FROM animals
 JOIN owners
 ON owners.id = owner_id
 WHERE owners.id=5 AND escape_attempts=0;
+
+SELECT count(*) as total,owners.id,owners.full_name
+FROM animals
+RIGHT JOIN owners ON owners.id = owner_id 
+GROUP BY owners.id
+ORDER BY total DESC
+LIMIT 1;
