@@ -90,6 +90,24 @@ WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
 
 SELECT animals.name
-FROM animals,owners
-WHERE owner_id=owners.id
+FROM animals
+JOIN owners
+ON owner_id=owners.id
 AND owners.id=4;
+
+SELECT animals.name
+FROM animals
+INNER JOIN species
+ON species_id=species.id
+WHERE species.id=2;
+
+SELECT animals.name,full_name
+FROM animals
+RIGHT JOIN owners ON owners.id = owner_id;
+
+
+SELECT count(*),species.name 
+FROM animals
+INNER JOIN species 
+ON species_id=species.id
+GROUP BY species.name;
