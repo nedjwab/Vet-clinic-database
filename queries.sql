@@ -99,7 +99,7 @@ SELECT animals.name
 FROM animals
 INNER JOIN species
 ON species_id=species.id
-WHERE species.id=2;
+WHERE species.id=1;
 
 SELECT animals.name,full_name
 FROM animals
@@ -111,3 +111,17 @@ FROM animals
 INNER JOIN species 
 ON species_id=species.id
 GROUP BY species.name;
+
+SELECT animals.name
+FROM animals
+INNER JOIN species 
+ON species_id=species.id
+JOIN owners
+ON owners.id=owner_id
+WHERE owners.id='2' AND species.id='2';
+
+SELECT animals.name
+FROM animals
+JOIN owners
+ON owners.id = owner_id
+WHERE owners.id=5 AND escape_attempts=0;
