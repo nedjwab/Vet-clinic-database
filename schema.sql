@@ -49,10 +49,9 @@ CREATE TABLE specializations (
 CREATE TABLE visits (
   animals_id int NOT NULL,
   vets_id int NOT NULL,
-  PRIMARY KEY (animals_id, vets_id),
+  date_of_visit DATE,
+  PRIMARY KEY (animals_id,vets_id,date_of_visit),
   FOREIGN KEY (animals_id) REFERENCES animals(id) ON UPDATE CASCADE,
   FOREIGN KEY (vets_id) REFERENCES vets(id) ON UPDATE CASCADE
 );
-
-Alter table visits ADD COLUMN date_of_visit DATE;
 
