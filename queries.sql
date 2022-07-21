@@ -177,3 +177,13 @@ ON visits.vets_id=vets.id
 GROUP BY animals.name
 ORDER BY total_visit DESC
 Limit 1;
+
+SELECT animals.name,date_of_visit
+FROM visits
+INNER JOIN animals 
+ON visits.animals_id=animals.id
+INNER JOIN vets
+ON visits.vets_id=vets.id
+WHERE vets.name='Maisy Smith'
+ORDER BY date_of_visit ASC
+Limit 1;
