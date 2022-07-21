@@ -54,3 +54,5 @@ CREATE TABLE visits (
   FOREIGN KEY (vets_id) REFERENCES vets(id) ON UPDATE CASCADE
 );
 
+Alter table visits ADD COLUMN date_of_visit DATE;
+
