@@ -158,3 +158,14 @@ INNER JOIN species
 ON specializations.species_id=species.id
 RIGHT JOIN vets
 ON specializations.vets_id=vets.id;
+
+List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
+
+SELECT animals.name
+FROM visits
+INNER JOIN animals 
+ON visits.animals_id=animals.id
+INNER JOIN vets
+ON visits.vets_id=vets.id
+WHERE vets.name='Stephanie Mendez'
+AND date_of_visit BETWEEN '2020-04-01' AND '2020-08-30';
