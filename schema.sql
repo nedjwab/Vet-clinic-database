@@ -45,3 +45,12 @@ CREATE TABLE specializations (
   FOREIGN KEY (species_id) REFERENCES species(id) ON UPDATE CASCADE,
   FOREIGN KEY (vets_id) REFERENCES vets(id) ON UPDATE CASCADE
 );
+
+CREATE TABLE visits (
+  animals_id int NOT NULL,
+  vets_id int NOT NULL,
+  PRIMARY KEY (animals_id, vets_id),
+  FOREIGN KEY (animals_id) REFERENCES animals(id) ON UPDATE CASCADE,
+  FOREIGN KEY (vets_id) REFERENCES vets(id) ON UPDATE CASCADE
+);
+
