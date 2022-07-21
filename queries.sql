@@ -151,3 +151,10 @@ INNER JOIN vets
 ON visits.vets_id=vets.id
 WHERE vets.name='Stephanie Mendez'
 GROUP BY vets.name;
+
+SELECT vets.name AS vet_name ,species.name AS species_name
+FROM specializations
+INNER JOIN species 
+ON specializations.species_id=species.id
+RIGHT JOIN vets
+ON specializations.vets_id=vets.id;
