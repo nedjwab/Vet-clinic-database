@@ -132,3 +132,13 @@ RIGHT JOIN owners ON owners.id = owner_id
 GROUP BY owners.id
 ORDER BY total DESC
 LIMIT 1;
+
+SELECT animals.name,vets.name,date_of_visit
+FROM visits
+INNER JOIN animals 
+ON visits.animals_id=animals.id
+INNER JOIN vets
+ON visits.vets_id=vets.id
+WHERE vets.name='William Tatcher'
+ORDER BY date_of_visit DESC
+Limit 1;
