@@ -142,3 +142,12 @@ ON visits.vets_id=vets.id
 WHERE vets.name='William Tatcher'
 ORDER BY date_of_visit DESC
 Limit 1;
+
+SELECT count(*) AS total_animals, vets.name
+FROM visits
+INNER JOIN animals 
+ON visits.animals_id=animals.id
+INNER JOIN vets
+ON visits.vets_id=vets.id
+WHERE vets.name='Stephanie Mendez'
+GROUP BY vets.name;
