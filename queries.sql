@@ -209,3 +209,15 @@ ON visits.vets_id=vets.id
 INNER JOIN specializations
 ON specializations.vets_id=visits.vets_id
 WHERE specializations.species_id !=animals.species_id;
+
+
+SELECT species.name ,count(*)
+FROM visits 
+INNER JOIN animals 
+ON visits.animals_id=animals.id
+INNER JOIN vets
+ON visits.vets_id=vets.id 
+INNER JOIN species
+ON animals.species_id=species.id
+WHERE vets.name='Maisy Smith'
+GROUP BY species.name;
