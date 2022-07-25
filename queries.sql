@@ -198,8 +198,6 @@ ON visits.vets_id=vets.id
 ORDER BY date_of_visit DESC
 Limit 1;
 
-How many visits were with a vet that did not specialize in that animal's species?
-
 SELECT count(*)
 FROM visits 
 INNER JOIN animals 
