@@ -198,8 +198,6 @@ ON visits.vets_id=vets.id
 ORDER BY date_of_visit DESC
 Limit 1;
 
-How many visits were with a vet that did not specialize in that animal's species?
-
 SELECT count(*)
 FROM visits 
 INNER JOIN animals 
@@ -221,3 +219,7 @@ INNER JOIN species
 ON animals.species_id=species.id
 WHERE vets.name='Maisy Smith'
 GROUP BY species.name;
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animals_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vets_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';

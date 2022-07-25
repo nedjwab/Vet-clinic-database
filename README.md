@@ -18,6 +18,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitHub: [@Nedjwab](https://github.com/nedjwab)
 - Twitter: [@nedjwab](https://twitter.com/ned_jwa)
 - LinkedIn: [@Bouraiounedjwa](https://www.linkedin.com/feed/)
+
+👤 **Author1**
+
+- GitHub : [@bouaik ilham](https://github.com/BouaikIlham)
+- Twitter: [@IlhamBouaik](https://twitter.com/IlhamBouaik)
+- LinkedIn: [@BouaikIlham](https://www.linkedin.com/in/bouaik-ilham-478478230/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
