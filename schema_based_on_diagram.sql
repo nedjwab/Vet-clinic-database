@@ -16,7 +16,7 @@ CREATE TABLE medical_hitories (
 
 CREATE TABLE treatments (
     id SERIAL PRIMARY KEY,
-    tybe varchar(100),
+    type varchar(100),
     name varchar(100)
 );
 
