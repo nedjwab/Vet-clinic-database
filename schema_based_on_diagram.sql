@@ -13,3 +13,9 @@ CREATE TABLE medical_hitories (
     FOREIGN KEY (patients_id) REFERENCES patients (id),
     status varchar(100)
 );
+
+CREATE TABLE treatments (
+    id SERIAL PRIMARY KEY,
+    tybe varchar(100),
+    name varchar(100)
+);
