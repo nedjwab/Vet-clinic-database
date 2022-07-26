@@ -1,6 +1,8 @@
 # Vet Clinic
 
 In this projects i used a relational database to create the data structure for a vet clinic.For now it consists just of the animals table.
+![alt text](https://github.com/nedjwab/Vet-clinic-database/blob/add-diagramme/diagram.png)
+
 
 ## Getting Started
 
